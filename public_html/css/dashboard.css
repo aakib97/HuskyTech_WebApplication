@@ -1,0 +1,78 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #F8F9FB;
+}
+
+h5 {
+    margin-bottom: 0 !important;
+}
+
+.text-gray {
+    color: #7c878e;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.badge{
+    width:100px !important;
+    height:auto !important;
+}
+
+.blue-icon{
+    color: #007bff;
+    font-size: 35px!important;
+}
+.black-icon{
+    color: black;
+    font-size: 35px!important;
+}
+.red-orange-icon{
+    color: #d64b29;
+    font-size: 35px!important;
+}
+.sea-green-icon{
+    color: seagreen;
+    font-size: 35px!important;
+}
+.dark-blue-icon{
+    color: rgb(97, 97, 190);
+    font-size: 35px!important;
+}
+.orange-icon{
+    color: #fc8b21;
+    font-size: 35px!important;
+}
+.green-icon{
+    color: rgb(2, 161, 2);
+    font-size: 35px!important;
+}
+.purple-icon{
+    color: rgb(170, 25, 170);
+    font-size: 35px!important;
+}
+.navy-icon{
+    color: navy;
+    font-size: 35px!important;
+}
+.outlook-icon{
+    width: 35px!important;
+    height: auto;
+    display: block;
+    margin: 0.5px auto;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+}
+.teams-icon{
+    width: 35px!important;
+    height: auto;
+    display: block;
+    margin: 1px auto;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+}

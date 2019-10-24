@@ -1,0 +1,25 @@
+/* @media(max-width: 768px){
+    img{
+        content: url("Assets/myhuskyechmoblie.png");
+    }
+}
+
+@media(min-width: 900px){
+    img{
+        content: url("Assets/myhuskyech.png");
+    } */
+
+}
+.row.mt-5{
+    height: 30%;
+    margin-bottom: 375px;
+}
+img{
+    border-radius: 60px;
+    /* content: url("Assets/myhuskyech.png"); */
+}
+body{
+    background-size: 100% auto;
+    background-repeat: repeat-x;
+    background-position: center top;
+}

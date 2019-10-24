@@ -1,0 +1,22 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif !important;;
+    background-color: #F8F9FB;
+}
+
+.pagination li a:hover {
+    float: left;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pagination li:hover {
+    background-color: rgb(0, 109, 240);
+}
+
+.page-link {
+    background-color: #ffffff !important;
+}
+
+.page-link:hover {
+    background-color: rgb(0, 109, 240) !important;
+}

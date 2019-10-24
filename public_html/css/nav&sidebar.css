@@ -1,0 +1,190 @@
+/*Blue color: #006DF0*/
+
+.bg-blue {
+    background-color: #004b98;
+}
+
+/*Make icons default to white*/
+i {
+    color: rgb(255, 255, 255);
+}
+
+/*Ensuring sidebar icons are blue*/
+ul[class="sidebar navbar-nav sidebar-shadow"] li a i, ul[class="sidebar navbar-nav sidebar-shadow toggled"] li a i {
+    color: #004b98;
+}
+
+/*Keeping sidebar links gray*/
+.sidebar .nav-item .nav-link, .navbar-nav .nav-item.active .nav-link, .sidebar .nav-item .nav-link:active, .sidebar .nav-item .nav-link:focus, .sidebar .nav-item .nav-link:hover {
+    color: #6c757d;
+}
+
+/*When sidebar links are hovered over, turn them blue*/
+.sidebar .nav-item .nav-link:hover, .navbar-nav .nav-item.active .nav-link:hover, a.dropdown-item:hover {
+    color: #004b98;
+}
+
+/*When sidebar links are hovered over, highlight them with blue bars*/
+ul[class*="sidebar"] .nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #004b98;
+    transition: .2s;
+}
+
+/* Creating the animated blue bar underneath the sidebar links when hovered over */
+ul[class*="sidebar"] .nav-item:hover::after {
+    width: 100%;
+}
+
+/*Formatting the block "Main" on the sidebar*/
+#sidebar-block {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700 !important;
+    font-size: 80%;
+    color: #5e6164 !important;
+    letter-spacing: .2em;
+}
+
+.sidebar {
+    background-color: white;
+}
+
+.sidebar-shadow {
+    -webkit-box-shadow: 0px 6px 24px -17px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 6px 24px -17px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 6px 24px -17px rgba(0, 0, 0, 0.47);
+}
+
+/* Ensuring the words "myITS" stay white when hovered over */
+.navbar-brand {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 50%;
+    color: white;
+}
+
+.navbar {
+    -webkit-box-shadow: 0px 6px 14px -7px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 6px 14px -7px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 6px 14px -7px rgba(0, 0, 0, 0.47);
+}
+
+.custom-toggler {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* When screen size is big enough, do the fancy dropdown animation */
+@media (min-width: 768px) {
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+
+    /*The blue line on the bottom was too close to the drop down menu*/
+    .sidebar .nav-item .dropdown-menu {
+        margin-bottom: 1rem !important;
+    }
+}
+
+/*A bunch of formatting improvements for smaller screen sizes*/
+@media (max-width: 576px) {
+    .sidebar {
+        width: 70%;
+    }
+
+    ul[class*="sidebar"] li.nav-item {
+        margin: 0 auto 0 auto;
+    }
+
+    ul[class*="sidebar"] li a i {
+        font-size: 2em;
+    }
+
+    ul[class*="sidebar"] li a .pl-2 {
+        padding-left: 0 !important;
+    }
+}
+
+/* Dropdown animation details */
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+/* More details */
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+/* Class that implements dropdown animation */
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+/* When the sidebar is expanded, the Updates link & icon are out of line, so this overrides the pl-2 class */
+ul[class="sidebar navbar-nav sidebar-shadow toggled"] li a i[class="fas fa-exclamation pl-2"], ul[class="sidebar navbar-nav sidebar-shadow toggled"] li a span[class="pl-2"] {
+    padding-left: 0px !important;
+}
+
+/* Preventing the navbar dropdown menus from expanding the header */
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+}
+
+.huskyPWR{
+    background-image: url(../Assets/squarewhite.ico);
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    display: inline-block !important;
+    width: 42px!important;
+    height: 48px!important;
+    content: "\f0f3" !important;
+}
+
+.huskyLogo{
+    background-image: url(../Assets/HuskyTechWhite.png);
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    display: inline-block !important;
+    width: 150px!important;
+    height: 75px!important;
+}
+.breadcrumb{
+    color: #7C878E !important;
+}
+
+.breadcrumb-item .active{
+    color: #acaeae !important;
+}
+
+.breadcrumb-item {
+    color: #004b98;
+}

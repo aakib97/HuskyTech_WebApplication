@@ -1,0 +1,225 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    background-color: #F8F9FB;
+}
+
+tbody {
+    display:block;
+    height: 55vh;
+    width: 100%;
+}
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-wrapper{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 55vh;
+}
+.custom-checkbox {
+    position: relative;
+}
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    margin: 5px 0 0 3px;
+    z-index: 9;
+}
+.custom-checkbox label:before{
+    width: 18px;
+    height: 18px;
+}
+.custom-checkbox label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    background: white;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.custom-checkbox input[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 11px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: inherit;
+    z-index: 3;
+    transform: rotateZ(45deg);
+}
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+    border-color: #03A9F4;
+    background: #03A9F4;
+}
+.custom-checkbox input[type="checkbox"]:checked + label:after {
+    border-color: #fff;
+}
+.custom-checkbox input[type="checkbox"]:disabled + label:before {
+    color: #b8b8b8;
+    cursor: auto;
+    box-shadow: none;
+    background: #ddd;
+}
+
+.checkbox-cell{
+    width: 18px;
+    height: 18px;
+}
+.full-cell{
+    width: 150px;
+    height: auto;
+}
+.netid-cell{
+    width: 110px;
+    height: auto;
+}
+.ID-cell{
+    width: 130px;
+    height: auto;
+}
+.rank-cell{
+    width: 150px;
+    height: 30px;
+}
+.team-cell{
+    width: 180px;
+    height: 30px;
+}
+.email-cell{
+    width: 300px;
+    height: auto;
+}
+.stuEmail-cell{
+    width: 300px;
+    height: auto;
+}
+.grad-cell{
+    width: 120px;
+    height: auto;
+}
+.acd-cell{
+    width: 65px;
+    height: auto;
+}
+.notes-cell{
+    width: 500px;
+    height: auto;
+}
+.actions-cell{
+    width: 100px;
+    height: auto;
+}
+
+.number-table{
+    height: 40px!important;
+}
+
+.fte-badge{
+    background: #4c0046;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.calllead-badge{
+    background: #6120bc;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.shoplead-badge{
+    background: #8123ce;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.aitlead-badge{
+    background: #891faf;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+
+.calladvanced-badge{
+    background: #30759b;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.shopadvanced-badge{
+    background: #1fa89a;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.aitadvanced-badge{
+    background: #0fc6db;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+
+.callspecialist-badge{
+    background: #496820;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.shopspecialist-badge{
+    background: #2fa508;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.aitspecialist-badge{
+    background: #7ea32f;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+
+.trainee-badge{
+    background: #b21c05;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+
+.total-badge{
+    background: black;
+    color: white;
+}
+
+.events-badge{
+    background: #ff9c00;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.improvements-badge{
+    background: #f33d3df5;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.kb-badge{
+    background: #00c3ff;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
+.training-badge{
+    background: #050055;
+    color: white;
+    height: 32px;
+    width: 145px;
+}
